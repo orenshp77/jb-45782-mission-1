@@ -1,0 +1,50 @@
+.center-wrapper {
+      width: 80%;
+      margin: 0 auto;
+      padding: 30px;
+    }
+
+    .form-group {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      width: 30%;
+      text-align: left;
+      font-weight: bold;
+    }
+
+    .form-group input {
+      width: 65%;
+    }
+
+    button {
+      display: block;
+      margin: 20px auto;
+    }
+
+    table {
+      width: 100%;
+      margin-top: 30px;
+      text-align: center;
+    }
+
+
+
+
+.center-wrapper {
+      width: 80%;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    form, table {
+      margin-bottom: 30px;
+    }
+    table th, table td {
+      padding: 10px;
+      text-align: center;
+    }
+
