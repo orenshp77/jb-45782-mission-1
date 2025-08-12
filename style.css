@@ -1,50 +1,239 @@
-.center-wrapper {
-      width: 80%;
-      margin: 0 auto;
-      padding: 30px;
-    }
+*{margin: 0 ; padding: 0; direction: rtl;}
 
-    .form-group {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 20px;
-    }
+        
 
-    .form-group label {
-      width: 30%;
-      text-align: left;
-      font-weight: bold;
-    }
+@font-face {
+    font-family: "MyFont";
+    src: url("GveretLevinAlefAlefAlef-Regular.ttf");
+}
 
-    .form-group input {
-      width: 65%;
-    }
-
-    button {
-      display: block;
-      margin: 20px auto;
-    }
-
-    table {
-      width: 100%;
-      margin-top: 30px;
-      text-align: center;
-    }
+@font-face {
+font-family: 'GveretLevinAlefAlefAlef-Regular';
+src: url('fonts/GveretLevinAlefAlefAlef-Regular.eot'); /* IE9 Compat Modes */
+src: url('fonts/GveretLevinAlefAlefAlef-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+url('fonts/GveretLevinAlefAlefAlef-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+url('fonts/GveretLevinAlefAlefAlef-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+url('fonts/GveretLevinAlefAlefAlef-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+url('fonts/GveretLevinAlefAlefAlef-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
 
 
+.container {
+    padding: 10%;
+    font-family: 'GveretLevinAlefAlefAlef-Regular';
+    font-size: 2vw;
+}
 
 
-.center-wrapper {
-      width: 80%;
-      margin: 0 auto;
-      padding: 20px;
-    }
-    form, table {
-      margin-bottom: 30px;
-    }
-    table th, table td {
-      padding: 10px;
-      text-align: center;
-    }
+.wrap{
+background-image: url("images/tile.jpg");
+height: 100%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+text-align: center;
+padding-bottom: 30px;
+box-shadow: 5px 10px #888888;
+}
+
+.img{
+    margin-top: 30px;
+}
+
+.back_formbg{
+    background-image: url(images/formbg.jpg);
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 50px;
+    text-align: right;
+}
+
+input[type="text"] {
+font-size: 2vw;
+background-color: transparent;
+border: 0px solid;
+height: auto;
+width: 76%;
+color: #000;
+font-family: 'GveretLevinAlefAlefAlef-Regular';
+outline: 0;
+}
+
+input[type="date"] {
+font-size: 2vw;
+background-color: transparent;
+border: 0px solid;
+height: auto;
+width: 22%;
+color: #000;
+font-family: 'GveretLevinAlefAlefAlef-Regular';
+outline: 0;
+}
+
+input[type="time"] {
+font-size: 2vw;
+background-color: transparent;
+border: 0px solid;
+height: auto;
+width: 24%;
+color: #000;
+font-family: 'GveretLevinAlefAlefAlef-Regular';
+outline: 0;
+}
+
+button {
+font-size: 2vw;
+background: transparent;
+padding: 13px;
+border-radius: 50%;
+width: 10%;
+height: 110px;
+font-family: 'GveretLevinAlefAlefAlef-Regular';
+}
+
+.buttons_mission {
+position: relative;
+margin-top: 33px;
+}
+
+button.save:hover {
+background-color: wheat;
+transition: 0.3s;
+}
+
+button.reset:hover {
+background-color: wheat;
+transition: 0.3s;
+}
+
+.notes{
+    display: flex;
+    justify-content: space-evenly; 
+    flex-wrap: wrap;
+}
+
+.note-1 p {
+    width: 95%;
+    margin-right: 11%;
+}
+
+
+p::-webkit-scrollbar-track {
+background: #000;
+}
+p::-webkit-scrollbar-thumb {
+background: #d4ce63;
+}
+
+p::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+.note-1 {
+    background-image: url(images/notebg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 3%;
+    font-size: 1vw;
+    flex-basis: 17%;
+    background-position-x: 23px;
+    height: 274px;
+}
+
+p {
+    overflow-y: overlay;
+    height: 70%;
+   
+}
+
+.page_date {
+    text-align: left;
+    font-size: 2vw;
+}
+
+.page_time{
+    text-align: left;
+    font-size: 1.5vw;
+}
+
+i.fa-solid.fa-circle-xmark {
+    margin-left: 100%;
+}
+
+.note-1{
+    i{opacity: 0;}
+}
+.note-1:hover{
+    i{opacity: 1;}
+}
+
+
+@media (max-width: 768px) {
+  .notes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .note-1 {
+    flex: 0 0 50%; /* שניים בשורה */
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px; /* תוכל לשנות לפי הצורך */
+  }
+  
+  .note-1 p {
+    width: 72%;
+    margin-right: 15%;
+    font-size: 3vw;
+}
+
+button {
+    font-size: 5vw;
+    background: transparent;
+    padding: 13px;
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+    font-family: 'GveretLevinAlefAlefAlef-Regular';
+}
+
+.back_formbg {
+    background-image: url(images/formbg.jpg);
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 50px;
+    text-align: right;
+    font-size: 3.6vw;
+}
+
+input#mission_detals {
+    font-size: 3.6vw;
+}
+input.flatpickr-input.flatpickr-mobile {
+    font-size: 3.6vw;
+}
+input#time_mission {
+    font-size: 3.6vw;
+}
+input[type="date"] {
+    font-size: 3.6vw;
+    width: 38%;
+    
+}
+
+
+ 
+  
+  
+}
+
+
+
+
+
 

@@ -1,71 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <script src="app.js" defer></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <!-- font Awesome cdn -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+     <!-- google fonts cdn -->
+     <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Rubik:wght@300..900&display=swap" rel="stylesheet" />
+     <!-- flatpicker -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
+     <!-- Inline CSS -->
+     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://npmcdn.com/flatpickr/dist/l10n/he.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
 
-  <div class="container mt-5">
-    <div class="row justify-content-center">
-      <div class="col-md-8">
-        <h1 class="text-center mb-4">Add Product</h1>
+<div class="container">
+    <div class="wrap">
+        <img class="img" src="images/title.png">
+            <div class="back_formbg">
 
-        <form id="productForm">
-          <div class="form-group">
-            <label for="ProductName">Name Product</label>
-            <input id="ProductName" type="text" class="form-control" placeholder="The name of the product" required>
-          </div>
-
-          <div class="form-group">
-            <label for="ProductPrice">Price Product</label>
-            <input id="ProductPrice" type="number" class="form-control" placeholder="The price of the product" required>
-          </div>
-
-          <div class="form-group">
-            <label for="catogoryProduct">What type of product is it?</label>
-            <select id="catogoryProduct" class="form-control" required>
-              <option disabled selected value="">Select product type</option>
-              <option>Drinks</option>
-              <option>Meat</option>
-              <option>Dairy</option>
-              <option>Snacks</option>
-              <option>Basic</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label for="imgProduct">The image product</label>
-            <input id="imgProduct" type="text" class="form-control" placeholder="https://image.jpg" required>
-          </div>
-
-          <button type="submit" class="btn btn-primary btn-block">Let's go</button>
-        </form>
-
-        <hr class="my-5">
-
-        <h2 class="text-center">Product List</h2>
-        <table class="table table-bordered table-striped mt-3 text-center">
-          <thead class="thead-dark">
-            <tr>
-              <th>Name Product</th>
-              <th>Price Product</th>
-              <th>Product Type</th>
-              <th>Image</th> 
-              <th>Actions</th> 
-            </tr>
-          </thead>
-          <tbody id="productList">
-            <!-- list here -->
-          </tbody>
-        </table>
-      </div>
+            <form class="formClass">
+                <div class="missin">
+                    <label>נתוני המשימה:</label>
+                    <input type="text" id="mission_detals">
+                </div>
+                <div class="datee">
+                    <label>תאריך יעד המשימה:</label>
+                    <input type="date" id="date_mission">
+                </div>
+                <div class="timee">
+                    <label>שעת יעד המשימה:</label>
+                    <input type="time" id="time_mission">
+                </div>
+                </div>
+            </form>
+            <div class="buttons_mission">
+                <button id="goin">שמירה</button>
+                <button class="reset">איפוס</button>
+                
+            </div>
+            
+            
+        
+            <div class="notes">
+                
+                </div> 
+            </div>
+        </div>
     </div>
-  </div>
-
+</div>
+<script src="script.js"></script>
 </body>
 </html>
